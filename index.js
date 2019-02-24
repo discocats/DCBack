@@ -1,13 +1,14 @@
-const express = require('express')
-const path = require('path')
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const express = require("express");
+
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
+
 
 const sweets = [
     { imageBigUrl: "dist/img/tetes_brulees_blueberry_Big.png", imageUrl: "dist/img/tetes_brulees_blueberry.png", name: "Tetes Brulees Blue Raspberry Color", description: "Кислая малина", price: 42 },
